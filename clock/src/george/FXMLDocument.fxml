@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" onMouseDragged="#handleMouseDragged" onMouseEntered="#handleMouseEntered" onMousePressed="#handleMousePressed" prefHeight="179.0" prefWidth="436.0" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="george.FXMLDocumentController">
+   <children>
+      <Label id="clock" fx:id="labelTime" alignment="CENTER" prefHeight="179.0" prefWidth="436.0" text="00:00:00 AM" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="French Script MT" size="89.0" />
+         </font>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleMenuExit" text="Exit Clock" />
+                
+              </items>
+            </ContextMenu>
+         </contextMenu>
+         <textFill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.6095238095238095" endY="1.0" startX="0.2380952380952382">
+               <stops>
+                  <Stop color="#7b00ff" />
+                  <Stop color="#9100ff" offset="0.007662835249042145" />
+                  <Stop color="#ff2121" offset="0.3601532567049807" />
+                  <Stop color="#ff8803" offset="0.5895643243670257" />
+                  <Stop color="#cdff00" offset="0.9157088122605364" />
+                  <Stop color="#1fe40a" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <Glow level="1.0">
+               <input>
+                  <Bloom threshold="0.0" />
+               </input>
+            </Glow>
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>
